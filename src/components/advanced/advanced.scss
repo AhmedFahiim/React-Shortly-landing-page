@@ -1,0 +1,42 @@
+.advanced {
+  margin-top: 150px;
+  padding: 100px 0;
+  background-color: hsl(0, 0%, 90%);
+  .section-head {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+
+    .disc {
+      width: 100%;
+      color: hsl(0, 0%, 75%);
+      font-weight: 500;
+      margin: auto;
+    }
+  }
+  .holder {
+    .row {
+      justify-content: space-between;
+    }
+    position: relative;
+    margin-top: 60px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 5px;
+      background-color: hsl(180, 66%, 49%);
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 10px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .advanced {
+    .section-head {
+      width: 90%;
+    }
+  }
+}

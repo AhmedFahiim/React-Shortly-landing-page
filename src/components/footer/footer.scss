@@ -1,0 +1,35 @@
+footer {
+  background-color: hsl(260, 8%, 14%);
+  color: #fff;
+  padding: 50px 0;
+  .row {
+    align-items: flex-start;
+  }
+  .footer-links {
+    padding: 0;
+    .link-item {
+      color: hsl(0, 0%, 75%);
+      margin-bottom: 5px;
+    }
+  }
+  .social {
+    display: flex;
+    justify-content: space-evenly;
+    img {
+      width: 30px;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  footer {
+    .row {
+      gap: 20px 0;
+    }
+    .column,
+    .logo {
+      text-align: center;
+    }
+  }
+}

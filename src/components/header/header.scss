@@ -1,0 +1,32 @@
+header,
+.links {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  .logo {
+    flex-basis: 120px;
+  }
+  nav {
+    flex: 1;
+    .links {
+      margin: 0 30px;
+      padding: 0;
+      .link-item {
+        margin-right: 15px;
+        font-weight: 500;
+        a {
+          color: hsl(0, 0%, 75%);
+        }
+      }
+    }
+  }
+  .buttons {
+    display: none;
+    flex-basis: 150px;
+  }
+  @media (min-width: 768px) {
+    .buttons {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.landing {
+  margin-top: 50px;
+  overflow: hidden;
+  .row {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .content {
+    .main-text {
+      font-size: 70px;
+      color: hsl(255, 11%, 22%);
+      font-weight: 900;
+    }
+    .disc {
+      width: 80%;
+      color: hsl(0, 0%, 75%);
+      font-weight: 500;
+      font-size: 18px;
+      text-transform: capitalize;
+    }
+  }
+  .image {
+    img {
+      position: relative;
+      left: 120px;
+    }
+  }
+  @media (max-width: 991px) {
+    .row {
+      gap: 50px;
+    }
+    .content {
+      text-align: center;
+      .main-text {
+        font-size: 50px;
+      }
+      .disc {
+        width: 100%;
+      }
+    }
+    .image {
+      img {
+        left: 0;
+      }
+    }
+  }
+}

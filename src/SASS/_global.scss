@@ -1,0 +1,36 @@
+// global rules
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+// global rules
+
+// components
+.main-button {
+  border: none;
+  outline: none;
+  border-radius: 99px;
+  padding: 8px 10px;
+  background-color: transparent;
+  transition: 0.3s;
+  &:hover {
+    background-color: hsl(255, 11%, 22%) !important;
+    color: #fff !important;
+  }
+  &.colored {
+    background-color: hsl(180, 66%, 49%);
+    color: #fff;
+  }
+}

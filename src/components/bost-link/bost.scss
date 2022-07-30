@@ -1,0 +1,39 @@
+@use "../../SASS/global" as *;
+.bost {
+  height: 25vh;
+  position: relative;
+  background-image: url(../../assets/images/bg-boost-desktop.svg);
+  background-size: cover;
+  background-color: hsl(257, 27%, 26%);
+  padding: 60px 0;
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    .Bost-today {
+      font-size: 35px;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+    .start {
+      background-color: hsl(180, 66%, 49%);
+      padding: 10px 30px;
+      color: #fff;
+      border: none;
+      border-radius: 99px;
+      font-weight: 500;
+    }
+    .main-button {
+      background-color: hsl(180, 66%, 49%);
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .content {
+    width: 70%;
+  }
+}
