@@ -40,10 +40,18 @@ function Footer() {
             </ul>
           </div>
           <div className="column social col-md-3">
-            <img src={FaceBook} />
-            <img src={Twitter} />
-            <img src={Pintrest} />
-            <img src={Instagram} />
+            <a href="#">
+              <img src={FaceBook} />
+            </a>
+            <a href="#">
+              <img src={Twitter} />
+            </a>
+            <a href="#">
+              <img src={Pintrest} />
+            </a>
+            <a href="#">
+              <img src={Instagram} />
+            </a>
           </div>
         </article>
       </div>
